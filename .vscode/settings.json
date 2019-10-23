@@ -29,6 +29,14 @@
       "autoFix": true
     }
   ],
-  "editor.formatOnSave": false,
-  "eslint.autoFixOnSave": true
+  "stylusSupremacy.sortProperties": "grouped",
+  "stylusSupremacy.insertBraces": false,
+  "stylusSupremacy.insertColons": false,
+  "stylusSupremacy.insertSemicolons": false,
+  "stylusSupremacy.insertNewLineAroundBlocks": false,
+  "stylusSupremacy.insertLeadingZeroBeforeFraction": false,
+  "editor.formatOnSave": true,
+  "eslint.autoFixOnSave": true,
+  "html.format.wrapLineLength": 160,
+  "vetur.format.defaultFormatter.html": "prettier",
 }

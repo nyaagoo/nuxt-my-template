@@ -23,7 +23,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['~style/style.styl'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -41,7 +41,8 @@ module.exports = {
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/style-resources'
   ],
   /*
    ** Axios module configuration

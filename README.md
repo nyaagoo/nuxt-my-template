@@ -13,9 +13,11 @@
   - [ ] Setup tsconfig.json
     - [ ] Clinet Side
     - [ ] Server Side
-- [ ] Install CSS Pre-Processors
-  - [ ] Install Stylus or Sass
-    - [ ] Setup Format
+- [x] Install CSS Pre-Processors
+  - [x] Install Stylus or Sass
+    - [x] Setup Format
+    - [x] Setup Lint
+    - [x] Add Global Style File
 - [ ] Install Jest
   - [ ] Add basic test
 - [ ] nuxt-property-decorator (class-style-component)
@@ -36,12 +38,12 @@
 - [ ] Setup Webpack
   - [ ] Purge CSS
 - [ ] Setup Express
-  - [ ] Create Simple API 
+  - [ ] Create Simple API
 - [ ] Setup OGP
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ npm run install
 
