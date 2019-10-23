@@ -37,6 +37,7 @@
   - [ ] Purge CSS
 - [ ] Setup Express
   - [ ] Create Simple API 
+- [ ] Setup OGP
 
 ## Build Setup
 
