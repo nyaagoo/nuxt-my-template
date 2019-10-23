@@ -1,17 +1,34 @@
 {
-    "workbench.colorCustomizations": {
-        "activityBar.background": "#88d7ea",
-        "activityBar.foreground": "#15202b",
-        "activityBar.inactiveForeground": "#15202b99",
-        "activityBarBadge.background": "#de41bf",
-        "activityBarBadge.foreground": "#e7e7e7",
-        "titleBar.activeBackground": "#5dc9e2",
-        "titleBar.inactiveBackground": "#5dc9e299",
-        "titleBar.activeForeground": "#15202b",
-        "titleBar.inactiveForeground": "#15202b99",
-        "statusBar.background": "#5dc9e2",
-        "statusBarItem.hoverBackground": "#32bbda",
-        "statusBar.foreground": "#15202b"
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#88d7ea",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#de41bf",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "titleBar.activeBackground": "#5dc9e2",
+    "titleBar.inactiveBackground": "#5dc9e299",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveForeground": "#15202b99",
+    "statusBar.background": "#5dc9e2",
+    "statusBarItem.hoverBackground": "#32bbda",
+    "statusBar.foreground": "#15202b"
+  },
+  "peacock.color": "#5dc9e2",
+  "editor.tabSize": 2,
+  "eslint.validate": [
+    {
+      "language": "vue",
+      "autoFix": true
     },
-    "peacock.color": "#5dc9e2"
+    {
+      "language": "javascript",
+      "autoFix": true
+    },
+    {
+      "language": "javascriptreact",
+      "autoFix": true
+    }
+  ],
+  "editor.formatOnSave": false,
+  "eslint.autoFixOnSave": true
 }

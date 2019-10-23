@@ -2,35 +2,32 @@
   <div class="container">
     <div>
       <logo />
-      <h1 class="title">
-        nuxt-my-template
-      </h1>
-      <h2 class="subtitle">
-        My groundbreaking Nuxt.js project
-      </h2>
+      <h1 class="title">nuxt-my-template</h1>
+      <h2 class="subtitle">{{ greet }} My groundbreaking Nuxt.js project</h2>
       <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
+        <a href="https://nuxtjs.org/" target="_blank" class="button--green"
+          >Documentation</a
+        >
         <a
           href="https://github.com/nuxt/nuxt.js"
           target="_blank"
           class="button--grey"
+          >GitHub</a
         >
-          GitHub
-        </a>
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
+import { Component, Vue } from 'nuxt-property-decorator'
 import Logo from '~/components/Logo.vue'
 
-export default {
-  components: {
-    Logo
-  }
+@Component({
+  components: { Logo }
+})
+export default class MyComponent extends Vue {
+  greet = 'hello'
 }
 </script>
 
