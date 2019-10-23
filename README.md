@@ -2,6 +2,42 @@
 
 > My groundbreaking Nuxt.js project
 
+## TODO
+
+- [x] Nuxt Basic Setup
+- [x] Install ESLint/Pretter
+  - [ ] Setup ESLint
+  - [ ] Setup Prettier
+  - [ ] Setup Vue/Vetur basic Linter/Formatter
+- [x] Install TypeScript
+  - [ ] Setup tsconfig.json
+    - [ ] Clinet Side
+    - [ ] Server Side
+- [ ] Install CSS Pre-Processors
+  - [ ] Install Stylus or Sass
+    - [ ] Setup Format
+- [ ] Install Jest
+  - [ ] Add basic test
+- [ ] nuxt-property-decorator (class-style-component)
+- [ ] Install HTML Template Engine (Pug) or Setup Intellisense
+- [ ] Install vuex-module-decorators
+  - [ ] Setup Basic Vuex store
+- [ ] Setup Atomic Design
+  - [ ] Rewrite Sample Component
+- [ ] Add Script to package.json
+  - [ ] Report/Build
+- [ ] Add .vscode file
+  - [ ] settings.json
+  - [ ] Recomend Extentitons
+- [ ] Write Readme.md
+  - [ ] Coding style Guide
+  - [ ] Snippets
+  - [ ] Build Setup
+- [ ] Setup Webpack
+  - [ ] Purge CSS
+- [ ] Setup Express
+  - [ ] Create Simple API 
+
 ## Build Setup
 
 ``` bash
