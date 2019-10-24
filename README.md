@@ -10,9 +10,9 @@
   - [ ] Setup Prettier
   - [ ] Setup Vue/Vetur basic Linter/Formatter
 - [x] Install TypeScript
-  - [ ] Setup tsconfig.json
-    - [ ] Clinet Side
-    - [ ] Server Side
+  - [x] Setup tsconfig.json
+    - [x] Client Side
+    - [x] Server Side
 - [x] Install CSS Pre-Processors
   - [x] Install Stylus or Sass
     - [x] Setup Format
@@ -30,7 +30,7 @@
   - [x] Report/Modern Build
 - [ ] Add .vscode file
   - [ ] settings.json
-  - [ ] Recomend Extentitons
+  - [ ] Reccomend Extentions
 - [ ] Write Readme.md
   - [ ] Coding style Guide
   - [ ] Snippets
