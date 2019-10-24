@@ -21,7 +21,7 @@
 - [ ] Install Jest
   - [ ] Add basic test
 - [ ] nuxt-property-decorator (class-style-component)
-- [ ] Install HTML Template Engine (Pug) or Setup Intellisense
+- [x] Install HTML Template Engine (Pug)
 - [ ] Install vuex-module-decorators
   - [ ] Setup Basic Vuex store
 - [ ] Setup Atomic Design
