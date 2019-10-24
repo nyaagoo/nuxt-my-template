@@ -26,8 +26,8 @@
   - [ ] Setup Basic Vuex store
 - [ ] Setup Atomic Design
   - [ ] Rewrite Sample Component
-- [ ] Add Script to package.json
-  - [ ] Report/Build
+- [x] Add Script to package.json
+  - [x] Report/Modern Build
 - [ ] Add .vscode file
   - [ ] settings.json
   - [ ] Recomend Extentitons

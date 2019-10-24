@@ -56,6 +56,11 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
+    splitChunks: {
+      layouts: true,
+      pages: true,
+      commons: true
+    },
     babel: {
       plugins: [
         ['@babel/plugin-proposal-decorators', { legacy: true }],
