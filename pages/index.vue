@@ -4,6 +4,10 @@
       logo
       h1.title nuxt-my-template
       h2.subtitle {{ greet }} My groundbreaking Nuxt.js project
+      p {{ count }}
+      button(@click="increment()") +
+      button(@click="decrement()") -
+      button(@click="reset()") RESET
       .links
         a.button--green(href='https://nuxtjs.org/' target='_blank') Documentation
         a.button--grey(href='https://github.com/nuxt/nuxt.js' target='_blank') GitHub
@@ -12,12 +16,25 @@
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
 import Logo from '~/components/Logo.vue'
+import { counterStore } from '~/store'
 
 @Component({
   components: { Logo }
 })
 export default class MyComponent extends Vue {
   greet = 'hello'
+  get count(): number {
+    return counterStore.counter1
+  }
+  increment() {
+    counterStore.increment()
+  }
+  decrement() {
+    counterStore.decrement()
+  }
+  reset() {
+    counterStore.fetch()
+  }
 }
 </script>
 

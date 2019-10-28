@@ -5,23 +5,25 @@
   "author": "nyaagoo",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
-    "build": "nuxt build",
-    "build:modern": "nuxt build --modern=server",
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "build:modern": "nuxt-ts build --modern=server",
     "start": "cross-env NODE_ENV=production node server/index.js",
-    "start:modern": "nuxt start --modern=server",
-    "report": "nuxt build --analyze",
-    "generate": "nuxt generate",
+    "start:modern": "nuxt-ts start --modern=server",
+    "report": "nuxt-ts build --analyze",
+    "generate": "nuxt-ts generate",
     "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore .",
     "lintfix": "eslint --fix --ext .ts,.js,.vue --ignore-path .gitignore .",
     "test": "jest"
   },
   "dependencies": {
+    "@nuxt/typescript-runtime": "^0.2.2",
     "@nuxtjs/axios": "^5.3.6",
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
-    "nuxt": "^2.0.0",
-    "nuxt-property-decorator": "^2.5.0"
+    "nuxt": "^2.10.2",
+    "nuxt-property-decorator": "^2.5.0",
+    "vuex-module-decorators": "^0.10.1"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.3.2",

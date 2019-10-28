@@ -20,10 +20,10 @@
     - [x] Add Global Style File
 - [ ] Install Jest
   - [ ] Add basic test
-- [ ] nuxt-property-decorator (class-style-component)
+- [x] nuxt-property-decorator (class-style-component)
 - [x] Install HTML Template Engine (Pug)
-- [ ] Install vuex-module-decorators
-  - [ ] Setup Basic Vuex store
+- [x] Install vuex-module-decorators
+  - [x] Setup Basic Vuex store
 - [ ] Setup Atomic Design
   - [ ] Rewrite Sample Component
 - [x] Add Script to package.json
