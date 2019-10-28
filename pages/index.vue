@@ -8,6 +8,7 @@
       button(@click="increment()") +
       button(@click="decrement()") -
       button(@click="reset()") RESET
+      DogList
       .links
         a.button--green(href='https://nuxtjs.org/' target='_blank') Documentation
         a.button--grey(href='https://github.com/nuxt/nuxt.js' target='_blank') GitHub
@@ -15,11 +16,12 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
-import Logo from '~/components/Logo.vue'
+import Logo from '~/components/atoms/Logo.vue'
+import DogList from '~/components/organisms/DogList.vue'
 import { counterStore } from '~/store'
 
 @Component({
-  components: { Logo }
+  components: { Logo, DogList }
 })
 export default class MyComponent extends Vue {
   greet = 'hello'
