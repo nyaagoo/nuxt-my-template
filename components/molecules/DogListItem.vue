@@ -1,6 +1,6 @@
 <template lang="pug">
   .dog-list-item
-    span {{ greet }} {{ dog }}
+    span {{ dog.name }} {{ dog.ruby }}
 </template>
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator';
@@ -10,9 +10,11 @@ import { Component, Vue, Prop } from 'vue-property-decorator';
   components: {}
 })
 export default class DogListItem extends Vue {
-  // TODO: TypeScriptのParserを入れたら初期化せずに!で置き換える
-  @Prop({ required: true }) dog!: { name: string; img: string };
-  @Prop({ required: true }) greet: string = 'hey';
+  @Prop({ required: true }) dogProp!: { name: string; ruby: string };
+
+  get dog() {
+    return this.dogProp;
+  }
 }
 </script>
 <style lang="stylus" scoped>

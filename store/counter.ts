@@ -1,4 +1,10 @@
-import { Module, VuexModule, Mutation, Action } from 'vuex-module-decorators';
+import {
+  Module,
+  VuexModule,
+  Mutation,
+  Action,
+  MutationAction
+} from 'vuex-module-decorators';
 
 @Module({
   stateFactory: true,
@@ -22,11 +28,10 @@ export default class Counter extends VuexModule {
   decrement() {
     this.setCounter1(this.counter1 - 1);
   }
-
-  /*
   @MutationAction({ mutate: ['counter1', 'counter2'] })
   async fetch() {
+    // API 通信等に使われるデコレータ awaitがつかないとエラーになるため、lintを切っている
+    // eslint-disable-next-line no-return-await
     return await { counter1: 20, counter2: 30 };
   }
-  */
 }

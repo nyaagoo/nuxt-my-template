@@ -19,16 +19,16 @@
     - [x] Setup Format
     - [x] Setup Lint
     - [x] Add Global Style File
-- [ ] Install Jest
-  - [ ] Add basic test
 - [x] nuxt-property-decorator (class-style-component)
 - [x] Install HTML Template Engine (Pug)
 - [x] Install vuex-module-decorators
   - [x] Setup Basic Vuex store
-- [ ] Setup Atomic Design
-  - [ ] Rewrite Sample Component
+- [x] Setup Atomic Design
+  - [x] Rewrite Sample Component
 - [x] Add Script to package.json
   - [x] Report/Modern Build
+- [ ] Install Jest
+  - [ ] Add basic test
 - [ ] Add .vscode file
   - [ ] settings.json
   - [ ] Reccomend Extentions
