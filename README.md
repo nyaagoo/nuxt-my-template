@@ -39,7 +39,9 @@
 - [ ] Setup Webpack
   - [ ] Purge CSS
 - [ ] Setup Express
-  - [ ] Create Simple API
+  - [x] Create Simple API
+  - [ ] Setup Layered Architecture
+  - [ ] Create asyncData Sample
 - [ ] Setup OGP
 
 ## Build Setup

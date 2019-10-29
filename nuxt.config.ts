@@ -40,6 +40,7 @@ const nuxtConfig: Configuration = {
         ['@babel/plugin-proposal-class-properties', { loose: true }]
       ]
     }
-  }
+  },
+  serverMiddleware: ['~/server/index.ts']
 };
 module.exports = nuxtConfig;
