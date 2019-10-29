@@ -10,22 +10,21 @@ module.exports = {
     },
   },
   extends: [
-    '@nuxtjs',
     'prettier',
+    'plugin:prettier/recommended',
     'prettier/vue',
-    'plugin:nuxt/recommended',
-    '@nuxtjs/eslint-config-typescript',
     "eslint:recommended",
-    'plugin:prettier/recommended'
+    '@nuxtjs',
+    'plugin:nuxt/recommended',
+    '@nuxtjs/eslint-config-typescript'
   ],
   plugins: [
     'prettier',
     'vue'
   ],
-  // add your custom rules here
   rules: {
     'nuxt/no-cjs-in-config': 'off',
-    "semi": [2, "always"],
+    "semi": ["error", "always"],
     "no-console": "off",
     "vue/max-attributes-per-line": "off",
     "prettier/prettier": ["error", { "semi": true }],

@@ -33,7 +33,7 @@ export default class MyComponent extends Vue {
     counterStore.decrement();
   }
   reset() {
-    counterStore.fetch();
+    // counterStore.fetch();
   }
 }
 </script>

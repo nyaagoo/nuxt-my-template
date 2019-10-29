@@ -8,7 +8,6 @@ import { Module, VuexModule, Mutation, Action } from 'vuex-module-decorators';
 export default class Counter extends VuexModule {
   counter1 = 10;
   counter2 = 20;
-
   @Mutation
   setCounter1(num: number) {
     this.counter1 = num;

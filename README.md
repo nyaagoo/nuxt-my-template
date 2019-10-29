@@ -9,6 +9,7 @@
   - [ ] Setup ESLint
   - [ ] Setup Prettier
   - [ ] Setup Vue/Vetur basic Linter/Formatter
+  - [x] LintOnSave
 - [x] Install TypeScript
   - [x] Setup tsconfig.json
     - [x] Client Side

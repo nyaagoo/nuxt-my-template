@@ -27,6 +27,10 @@
     {
       "language": "javascriptreact",
       "autoFix": true
+    },
+    {
+      "language": "typescript",
+      "autoFix": true
     }
   ],
   "stylusSupremacy.sortProperties": "grouped",
@@ -35,8 +39,8 @@
   "stylusSupremacy.insertSemicolons": false,
   "stylusSupremacy.insertNewLineAroundBlocks": false,
   "stylusSupremacy.insertLeadingZeroBeforeFraction": false,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "eslint.autoFixOnSave": true,
   "html.format.wrapLineLength": 160,
-  "vetur.format.defaultFormatter.html": "prettier",
+  "vetur.format.defaultFormatter.html": "prettier"
 }
