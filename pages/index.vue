@@ -14,26 +14,26 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator'
-import Logo from '~/components/Logo.vue'
-import { counterStore } from '~/store'
+import { Component, Vue } from 'nuxt-property-decorator';
+import Logo from '~/components/Logo.vue';
+import { counterStore } from '~/store';
 
 @Component({
   components: { Logo }
 })
 export default class MyComponent extends Vue {
-  greet = 'hello'
+  greet = 'hello';
   get count(): number {
-    return counterStore.counter1
+    return counterStore.counter1;
   }
   increment() {
-    counterStore.increment()
+    counterStore.increment();
   }
   decrement() {
-    counterStore.decrement()
+    counterStore.decrement();
   }
   reset() {
-    counterStore.fetch()
+    counterStore.fetch();
   }
 }
 </script>

@@ -5,7 +5,6 @@ module.exports = {
     node: true
   },
   parserOptions: {
-    parser: 'babel-eslint',
     ecmaFeatures: {
       'legacyDecorators': true
     },
@@ -17,7 +16,7 @@ module.exports = {
     'plugin:nuxt/recommended',
     '@nuxtjs/eslint-config-typescript',
     "eslint:recommended",
-    'plugin:prettier/recommended',
+    'plugin:prettier/recommended'
   ],
   plugins: [
     'prettier',
@@ -26,10 +25,10 @@ module.exports = {
   // add your custom rules here
   rules: {
     'nuxt/no-cjs-in-config': 'off',
-    "semi": [2, "never"],
+    "semi": [2, "always"],
     "no-console": "off",
     "vue/max-attributes-per-line": "off",
-    "prettier/prettier": ["error", { "semi": false }],
+    "prettier/prettier": ["error", { "semi": true }],
     "vue/multiline-html-element-content-newline": "off",
     "vue/html-indent": "off",
     "vue/html-closing-bracket-newline": "off",
