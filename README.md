@@ -1,6 +1,74 @@
 # nuxt-my-template
 
-> My groundbreaking Nuxt.js project
+Not yet complete!!!
+
+## Provides the following
+- Full TypeScript support (including Vuex)
+- Efficient coding with Pug and Stylus
+- Static analysis and automatic format by ESLint
+- Indicator of component division by AtomicDesign
+- Efficient build by webpack setting
+
+## Features Vue Settings
+- Nuxt.js
+  - Default is SSR
+  - Router
+  - Vuex
+- TypeScript
+  - Client / Server
+- HTML template engine
+  - Pug
+- CSS Pre-Processors
+  - Stylus
+- Linter / Formatter
+  - ESLint
+  - Prettier
+- API Server
+  - Express
+  - like BFF
+- Unit Test
+  - Jade
+
+## Features
+
+- TypeScript full support(client /server side)
+- nuxt-property-decorator
+  - Component & TypeScript
+  - SFC(single-file-component) Style
+- Pug as a HTML template engine
+  - Rewriting vue's initial template using pug and stylus
+- Auto Format CSS to Stylus
+  - Auto Sort Stylus Property
+- vuex-module-decorators
+  - Great decorators that can type check in Vuex store
+  - Sample module  ~/store/
+  - [championswimmer/vuex-module-decorators](https://github.com/championswimmer/vuex-module-decorators).
+- Auto Lint on save
+- Atomic Design to separate the components, but it's not that exact
+  - Template element is not implemented
+
+## Coding Style
+
+### Style Guide
+
+- Vue: Based on official Style Guide
+  - [Style Guide — Vue.js](https://vuejs.org/v2/style-guide/index.html)
+- TypeScript: Based on unofficial Style Guide (TypeScript Deep Dive)
+  - [StyleGuide · TypeScript Deep Dive](https://basarat.gitbooks.io/typescript/docs/styleguide/styleguide.html)
+
+### TypeScript Settings
+
+```
+	"strict": true,
+	"noUnusedLocals": true,
+	"noUnusedParameters": true,
+	"noImplicitReturns": true,
+	"noFallthroughCasesInSwitch": true,
+```
+
+### Others
+
+- 2 spaces per indentation
 
 ## TODO
 
@@ -33,9 +101,9 @@
   - [ ] settings.json
   - [ ] Reccomend Extentions
 - [ ] Write Readme.md
-  - [ ] Coding style Guide
+  - [x] Coding style Guide
   - [ ] Snippets
-  - [ ] Build Setup
+  - [x] Build Setup
 - [ ] Setup Webpack
   - [ ] Purge CSS
 - [ ] Setup Express
@@ -56,6 +124,16 @@ $ npm run dev
 # build for production and launch server
 $ npm run build
 $ npm run start
+
+# build for production including modern bundle 
+$ npm run build:modern
+
+# Generate report.html to help analyze bundle content
+$ npm run report
+
+# Run Lint and Auto fix format
+$ npm run Lint
+$ npm run Lint:fix
 
 # generate static project
 $ npm run generate
