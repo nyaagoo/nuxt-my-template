@@ -12,8 +12,8 @@ import {
   name: 'counter'
 })
 export default class Counter extends VuexModule {
-  counter1 = 10;
-  counter2 = 20;
+  counter1: number = 10;
+  counter2: number = 20;
   @Mutation
   setCounter1(num: number) {
     this.counter1 = num;
@@ -28,10 +28,10 @@ export default class Counter extends VuexModule {
   decrement() {
     this.setCounter1(this.counter1 - 1);
   }
-  @MutationAction({ mutate: ['counter1', 'counter2'] })
+  @MutationAction
   async fetch() {
     // API 通信等に使われるデコレータ awaitがつかないとエラーになるため、lintを切っている
     // eslint-disable-next-line no-return-await
-    return await { counter1: 20, counter2: 30 };
+    return await { counter1: 30, counter2: 30 };
   }
 }
