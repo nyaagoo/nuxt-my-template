@@ -1,4 +1,5 @@
 import { Module, VuexModule, Mutation, Action } from 'vuex-module-decorators';
+import { teisu, counterStore, teisu2, setTeisu2 } from '~/store';
 
 @Module({
   stateFactory: true,
@@ -18,6 +19,13 @@ export default class Dog extends VuexModule {
   @Action({ rawError: true })
   addDog(dog: { name: string; ruby: string }) {
     this.setDogList([...this.dogList, dog]);
+    console.log(teisu2);
+    setTeisu2('world');
+    console.log(teisu2);
+
+    console.log(counterStore);
+    console.log(teisu);
+    // counterStore.increment();
   }
 
   /*

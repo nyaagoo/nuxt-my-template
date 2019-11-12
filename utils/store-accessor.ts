@@ -7,10 +7,17 @@ import Dog from '~/store/dog';
 
 let counterStore: Counter;
 let dogStore: Dog;
+let teisu: number = 1000;
+let teisu2: string = 'hello';
 
 function initializeStores(store: Store<any>): void {
   counterStore = getModule(Counter, store);
   dogStore = getModule(Dog, store);
+  teisu = 20000;
 }
 
-export { initializeStores, counterStore, dogStore };
+function setTeisu2(args: string): void {
+  teisu2 = args;
+}
+
+export { initializeStores, setTeisu2, counterStore, dogStore, teisu, teisu2 };
