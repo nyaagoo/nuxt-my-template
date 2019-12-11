@@ -32,6 +32,8 @@ module.exports = {
     "vue/html-indent": "off",
     "vue/html-closing-bracket-newline": "off",
     "vue/singleline-html-element-content-newline": "off",
-    "space-before-function-paren": "off"
+    "space-before-function-paren": "off",
+    "promise/param-names": "off",
+    "no-return-await": "off"
   }
 }

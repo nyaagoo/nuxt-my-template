@@ -1,4 +1,4 @@
-import { createLocalVue } from '@vue/test-utils';
+import { createLocalVue, mount } from '@vue/test-utils';
 import Vuex, { Store } from 'vuex';
 import {
   initializeStores,
@@ -7,6 +7,7 @@ import {
 } from '~/utils/store-accessor';
 import Dog from '~/store/dog';
 import Counter from '~/store/counter';
+import Logo from '~/components/atoms/Logo.vue';
 
 // 拡張された Vue コンストラクタを作成する
 const localVue = createLocalVue();
@@ -20,6 +21,10 @@ describe('Logo', () => {
       modules: { dog: Dog, counter: Counter }
     });
     initializeStores(store);
+  });
+  test('Logo.vue can mount', () => {
+    const wrapper = mount(Logo);
+    expect(wrapper.isVueInstance).toBeTruthy();
   });
 
   test('is a Vue instance', () => {

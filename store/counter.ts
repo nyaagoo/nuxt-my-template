@@ -28,10 +28,15 @@ export default class Counter extends VuexModule {
   decrement() {
     this.setCounter1(this.counter1 - 1);
   }
+
   @MutationAction
   async fetch() {
     // API 通信等に使われるデコレータ awaitがつかないとエラーになるため、lintを切っている
-    // eslint-disable-next-line no-return-await
-    return await { counter1: 30, counter2: 30 };
+    return await new Promise((resolve, _reject) =>
+      resolve({
+        counter1: 30,
+        counter2: 30
+      })
+    );
   }
 }
