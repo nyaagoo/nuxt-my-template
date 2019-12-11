@@ -19,7 +19,9 @@
       "~/*": ["./*"],
       "@/*": ["./*"]
     },
-    "types": ["@types/node", "@nuxt/types"]
+    "types": ["@types/node", "@nuxt/types", "jest"]
   },
-  "exclude": ["node_modules"]
+  "include": ["test/**/*", "**/*.ts", "**/*.vue"],
+  "exclude": ["node_modules"],
+  "files": ["ts-shim.d.ts"]
 }

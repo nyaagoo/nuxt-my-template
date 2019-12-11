@@ -27,7 +27,7 @@ Not yet complete!!!
   - Express
   - like BFF
 - Unit Test
-  - Jade
+  - Jast
 
 ## Features
 
@@ -77,7 +77,7 @@ Not yet complete!!!
   - [ ] Setup ESLint
   - [ ] Setup Prettier
   - [ ] Setup Vue/Vetur basic Linter/Formatter
-  - [x] LintOnSave
+  - [x] LintOnSave(VSCode)
 - [x] Install TypeScript
   - [x] Setup tsconfig.json
     - [x] Client Side
@@ -95,8 +95,16 @@ Not yet complete!!!
   - [x] Rewrite Sample Component
 - [x] Add Script to package.json
   - [x] Report/Modern Build
-- [ ] Install Jest
+- [ ] Jest Test
   - [ ] Add basic test
+    - [ ] SnapShot
+    - [x] Vue component
+    - [ ] Vue component method
+    - [x] Vuex
+      - [x] State
+      - [x] Mutation
+      - [x] Action
+      - [x] MutationAction
 - [ ] Add .vscode file
   - [ ] settings.json
   - [ ] Reccomend Extentions

@@ -2,11 +2,10 @@
 
 import { Store } from 'vuex';
 import { getModule } from 'vuex-module-decorators';
-import Counter from '~/store/counter';
 import Dog from '~/store/dog';
-
-let counterStore: Counter;
-let dogStore: Dog;
+import Counter from '~/store/counter';
+let counterStore: Counter = {} as Counter;
+let dogStore: Dog = {} as Dog;
 
 function initializeStores(store: Store<any>): void {
   counterStore = getModule(Counter, store);

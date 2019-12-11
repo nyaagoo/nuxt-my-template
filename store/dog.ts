@@ -1,4 +1,5 @@
 import { Module, VuexModule, Mutation, Action } from 'vuex-module-decorators';
+import { counterStore } from '~/utils/store-accessor';
 
 @Module({
   stateFactory: true,
@@ -18,6 +19,7 @@ export default class Dog extends VuexModule {
   @Action({ rawError: true })
   addDog(dog: { name: string; ruby: string }) {
     this.setDogList([...this.dogList, dog]);
+    counterStore.increment();
   }
 
   /*
