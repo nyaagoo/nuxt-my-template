@@ -1,11 +1,12 @@
-import { mount, createLocalVue } from '@vue/test-utils';
-import { getModule } from 'vuex-module-decorators';
+import { createLocalVue } from '@vue/test-utils';
 import Vuex, { Store } from 'vuex';
-import LogoNuxt from './../components/atoms/Logo.vue';
+import {
+  initializeStores,
+  dogStore,
+  counterStore
+} from '~/utils/store-accessor';
 import Dog from '~/store/dog';
 import Counter from '~/store/counter';
-import { initializeStores } from '~/store';
-// import Counter from '~/store/counter';
 
 // 拡張された Vue コンストラクタを作成する
 const localVue = createLocalVue();
@@ -14,29 +15,15 @@ const localVue = createLocalVue();
 localVue.use(Vuex);
 let store: Store<any>;
 describe('Logo', () => {
-  beforeEach(async () => {
-    store = new Vuex.Store({ modules: { dog: Dog, counter: Counter } });
-    await initializeStores(store);
-    store.hotUpdate({ modules: { dog: Dog } });
+  beforeAll(() => {
+    store = new Vuex.Store({
+      modules: { dog: Dog, counter: Counter }
+    });
+    initializeStores(store);
   });
 
-  test('is a Vue instance', async () => {
-    const counter = new Counter(store);
-    counter.increment();
-
-    // store.registerModule('Dog', Dog);
-    const dogModule = getModule(Dog, store);
-    const counterModule = getModule(Counter, store);
-    console.log(await dogModule.addDog({ name: 'sdas', ruby: 'sdako' }));
-    initializeStores(store);
-    console.log(await dogModule.addDog({ name: 'sdas', ruby: 'sdako' }));
-    console.log(dogModule.dogList);
-    console.log(counterModule.counter1);
-    // console.log(dogModule.dogList);
-
-    // console.log(store.state.dogList);
-
-    const wrapper = mount(LogoNuxt);
-    expect(wrapper.isVueInstance()).toBeTruthy();
+  test('is a Vue instance', () => {
+    dogStore.addDog({ name: 'sa', ruby: 'sa' });
+    expect(counterStore.counter1).toBe(11);
   });
 });

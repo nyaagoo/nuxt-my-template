@@ -5,7 +5,7 @@ import {
   Action,
   MutationAction
 } from 'vuex-module-decorators';
-import { teisu2, setTeisu2 } from '~/store';
+
 @Module({
   stateFactory: true,
   namespaced: true,
@@ -21,9 +21,6 @@ export default class Counter extends VuexModule {
 
   @Action({ rawError: true })
   increment() {
-    console.log(teisu2);
-    setTeisu2('world');
-    console.log(teisu2);
     this.setCounter1(this.counter1 + 1);
   }
 
