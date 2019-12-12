@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`index Snapshot 1`] = `
+<div
+  class="container"
+>
+  <div>
+    <logo-stub />
+    <h1
+      class="title"
+    >
+      nuxt-my-template
+    </h1>
+    <h2
+      class="subtitle"
+    >
+      hello My groundbreaking Nuxt.js project
+    </h2>
+    <p>
+      
+    </p>
+    <button>
+      +
+    </button>
+    <button>
+      -
+    </button>
+    <button>
+      RESET
+    </button>
+    <doglist-stub />
+    <div
+      class="links"
+    >
+      <a
+        class="button--green"
+        href="https://nuxtjs.org/"
+        target="_blank"
+      >
+        Documentation
+      </a>
+      <a
+        class="button--grey"
+        href="https://github.com/nuxt/nuxt.js"
+        target="_blank"
+      >
+        GitHub
+      </a>
+    </div>
+  </div>
+</div>
+`;

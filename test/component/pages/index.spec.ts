@@ -1,4 +1,4 @@
-import { mount } from '@vue/test-utils';
+import { mount, shallowMount } from '@vue/test-utils';
 import index from '~/pages/index.vue';
 
 describe('index', () => {
@@ -7,6 +7,9 @@ describe('index', () => {
     const wrapper = mount(index);
     expect(wrapper.isVueInstance).toBeTruthy();
   });
+  s;
+  test('Snapshot', () => {
+    const wrapper = shallowMount(index);
+    expect(wrapper.element).toMatchSnapshot();
+  });
 });
-
-// TODO: Create vuex Counter module test
