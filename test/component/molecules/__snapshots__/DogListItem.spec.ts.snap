@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DogListItem Snapshot 1`] = `
+<div
+  class="dog-list-item"
+>
+  <span>
+    test test2
+  </span>
+</div>
+`;

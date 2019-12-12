@@ -97,7 +97,7 @@ Not yet complete!!!
   - [x] Report/Modern Build
 - [ ] Jest Test
   - [ ] Add basic test
-    - [ ] SnapShot
+    - [x] SnapShot
     - [x] Vue component
     - [ ] Vue component method
     - [x] Vuex
