@@ -19,12 +19,12 @@ import { Component, Vue } from 'nuxt-property-decorator';
 import Logo from '~/components/atoms/Logo.vue';
 import DogList from '~/components/organisms/DogList.vue';
 
-import { counterStore } from '~/store';
+import { counterStore } from '~/utils/store-accessor';
 
 @Component({
   components: { Logo, DogList }
 })
-export default class MyComponent extends Vue {
+export default class Index extends Vue {
   greet = 'hello';
   get count(): number {
     return counterStore.counter1;

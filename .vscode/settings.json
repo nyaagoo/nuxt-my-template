@@ -43,5 +43,8 @@
   "editor.formatOnSave": false,
   "eslint.autoFixOnSave": true,
   "html.format.wrapLineLength": 160,
-  "vetur.format.defaultFormatter.html": "prettier"
+  "vetur.format.defaultFormatter.html": "prettier",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }

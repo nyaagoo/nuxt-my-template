@@ -95,11 +95,11 @@ Not yet complete!!!
   - [x] Rewrite Sample Component
 - [x] Add Script to package.json
   - [x] Report/Modern Build
-- [ ] Jest Test
-  - [ ] Add basic test
-    - [ ] SnapShot
+- [x] Jest Test
+  - [x] Add basic test
+    - [x] SnapShot
     - [x] Vue component
-    - [ ] Vue component method
+    - [x] Vue component method
     - [x] Vuex
       - [x] State
       - [x] Mutation

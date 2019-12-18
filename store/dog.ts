@@ -8,7 +8,7 @@ import { counterStore } from '~/utils/store-accessor';
 })
 export default class Dog extends VuexModule {
   dogList: { name: string; ruby: string }[] = [
-    { name: 'Borozoi', ruby: 'ボルゾイ' },
+    { name: 'Borzoi', ruby: 'ボルゾイ' },
     { name: 'chihuahua', ruby: 'チワワ' }
   ];
   @Mutation
