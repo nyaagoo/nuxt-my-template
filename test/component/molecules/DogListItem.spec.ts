@@ -1,4 +1,4 @@
-import { mount } from '@vue/test-utils';
+import { mount, shallowMount } from '@vue/test-utils';
 import DogListItem from '~/components/molecules/DogListItem.vue';
 
 describe('DogListItem', () => {
@@ -11,5 +11,14 @@ describe('DogListItem', () => {
     });
     expect(wrapper.isVueInstance).toBeTruthy();
     expect(wrapper.props().dogProp.name).toBe('test');
+  });
+
+  test('Snapshot', () => {
+    const wrapper = shallowMount(DogListItem, {
+      propsData: {
+        dogProp: { name: 'test', ruby: 'test2' }
+      }
+    });
+    expect(wrapper.element).toMatchSnapshot();
   });
 });

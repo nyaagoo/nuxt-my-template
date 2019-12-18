@@ -27,7 +27,7 @@ Not yet complete!!!
   - Express
   - like BFF
 - Unit Test
-  - Jast
+  - Jest
 
 ## Features
 

@@ -50,5 +50,3 @@ describe('index', () => {
     expect(counterStore.counter2).toBe(30);
   });
 });
-
-// TODO: Create vuex Counter module test

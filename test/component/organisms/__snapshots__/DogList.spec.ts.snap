@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DogList Snapshot 1`] = `
+<div
+  class="dog-list"
+>
+  <ul />
+</div>
+`;
