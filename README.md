@@ -74,9 +74,9 @@ Not yet complete!!!
 
 - [x] Nuxt Basic Setup
 - [x] Install ESLint/Pretter
-  - [ ] Setup ESLint
-  - [ ] Setup Prettier
-  - [ ] Setup Vue/Vetur basic Linter/Formatter
+  - [x] Setup ESLint
+  - [x] Setup Prettier
+  - [x] Setup Vue/Vetur basic Linter/Formatter
   - [x] LintOnSave(VSCode)
 - [x] Install TypeScript
   - [x] Setup tsconfig.json
@@ -106,7 +106,7 @@ Not yet complete!!!
       - [x] Action
       - [x] MutationAction
 - [ ] Add .vscode file
-  - [ ] settings.json
+  - [x] settings.json
   - [ ] Reccomend Extentions
 - [ ] Write Readme.md
   - [x] Coding style Guide

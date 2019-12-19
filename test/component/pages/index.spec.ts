@@ -12,9 +12,7 @@ describe('index', () => {
   beforeAll(() => {
     localVue = createLocalVue();
     localVue.use(Vuex);
-    store = new Vuex.Store({
-      modules: { dog: Dog, counter: Counter }
-    });
+    store = new Vuex.Store({ modules: { dog: Dog, counter: Counter } });
     initializeStores(store);
   });
 
